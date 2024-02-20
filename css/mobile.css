@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@media (max-width: 600px) {
+    html{
+        font-size: 52.5%;
+    }
+    section{
+        padding: 10rem 4% 2rem;
+    }
+    /* Nav */
+    .header{
+        padding: 1rem 4%;
+        background: rgba(0, 0, 0, 0.9);
+    }
+    .header__icon{
+        display: block;
+    }
+    .nav__container__buttons{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--fireEngineRed);
+        border-bottom: 2px solid var(--fireEngineRed);
+    }
+    .nav__container__buttons a{
+        display: block;
+    }
+    .nav__container__buttons.active{
+        display: block;
+    }
+    nav a{
+        margin: .5rem 1rem;
+    }
+    .btn{
+        padding: .5rem 1.4rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .nav__btn{
+        margin: auto
+    }
+
+    /* Portfolio */
+    .portfolio__imagen--center{
+        height: 44vh;
+    }
+    .portfolio__name{
+        right: 4%;
+    }
+    .portfolio__titleContainer{
+        right: 4%;
+    }
+    .portfolio__titleContainer h3{
+        font-size: 13rem;
+    }
+    /* About me */
+    .aboutMe{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .aboutMe__container h3{
+        font-size: 3rem;
+    }
+    .aboutMe__container p{
+        font-size: 1.8rem;
+    }
+    .aboutMe__container > *{
+        text-align: center !important;
+    }
+    .aboutMe__container p{
+        margin: 2rem 1rem;
+    }
+    .aboutMe__img img{
+        width: 50vw;
+    }
+
+
+    /* Experience */
+    .experience{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .experience > *{
+        text-align: center;
+    }
+    .experience__qrcode p a img{
+        width: 55vw;
+    }
+    .experience__skills span img{
+        margin: 1.2rem 2rem;
+        width: 40px;
+        height: 40px;
+    }
+    .texto-oculto{
+        opacity: 1;
+        bottom: 0px;
+    }
+    .texto-oculto a{
+        font-size: 1.6rem;
+    }
+    .experience__qrcode:hover .texto-oculto {
+        opacity: 0;
+    }
+
+    /* projects */
+    .projects__grid{
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
+        gap: 25px;
+    }
+    .projects__items:nth-of-type(1){
+        grid-area: img1;
+    }
+    .projects__items:nth-of-type(2){
+        grid-area: img2;
+    }
+    .projects__items:nth-of-type(3){
+        grid-area: img3;
+    }
+    .projects__items:nth-of-type(4){
+        grid-area: img4;
+    }
+    .projects__items:nth-of-type(5){
+        grid-area: img5;
+    }
+    /* footer */
+    .footer__container{
+        top: -10px;
+    }
+}

@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+:root{
+    --fireEngineRed: #D90429;
+    --redPantone: #EF233C;
+    --night: #0F0F0F;
+    --earieBlack: #0B0C0C;
+    --platinum: #D9D9D9;
+    --whitee: #FFFFFF;
+    --pennRed: #9E1309;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Katibeh', serif;
+}
+body{
+    margin: 0;
+    background-color: var(--night);
+    color: var(--platinum);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+.active{
+    display: inline-block;
+}
+/* Nav */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 9%;
+    width: 100%;
+    z-index: 1030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.header__logo img{
+    height: 4.5rem;
+    z-index: 1030;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.footer__logo img:hover, .header__logo img:hover{
+    transform: scale(1.1);
+}
+nav a{
+    color: var(--whitee);
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 4rem;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a.active {
+    color: var(--fireEngineRed);
+    border-bottom: 3px solid var(--fireEngineRed);
+}
+.header__icon{
+    font-size: 3.6rem;
+    color: var(--fireEngineRed) ;
+    display: none;
+}
+.nav__container__buttons{
+    display: inline-block;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    font-size: 1.8rem;
+    color: var(--platinum);
+    border: 2px solid transparent;
+    letter-spacing: 0.2rem;
+    border-radius: 4rem;
+    background-color: var(--pennRed);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.nav__btn{
+    margin-left: 4rem;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--fireEngineRed);
+    color: var(--whitee);
+}
+/* Portfolio */
+.portfolio{
+    padding: 0 !important;
+}
+.portfolio__background{
+    display: grid;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 
+    "img1"
+    "img2";
+    gap: 0px;
+}
+.portfolio__imagen--top, .portfolio__imagen--bottom{
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+.portfolio__background--front{
+    z-index: 2;
+    position: absolute;
+    top: 17%;
+    left: 17%;
+}
+.portfolio__imagen--center{
+    width: calc(30vw * 1.4);
+    height: 50vh;
+    object-fit: cover;
+}
+.portfolio__name{
+    font-size: 4rem;
+    color: var(--redPantone);
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    z-index: 3;
+}
+.portfolio__titleContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+}
+.portfolio__titleContainer h3{
+    z-index: 10;
+    color: var(--fireEngineRed);
+    margin: 0;
+    font-size: 16rem;
+}
+.portfolio__titleContainer h3:first-child{
+    position: absolute;
+    bottom: calc(7% + 8rem);
+}
+svg{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    display: block;
+    z-index: 9;
+    bottom: 0;
+}
+.portfolio__wave--top{
+    position: absolute;
+    bottom: 0;
+}
+
+/* About me */
+
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: var(--night);
+}
+.heading{
+    text-align: center;
+    font-size: 8rem;
+}
+.aboutMe__container h2{
+    text-align: left;
+    line-height: 1.5;
+    margin: 0;
+}
+.aboutMe__container h3{
+    font-size: 4rem;
+    color: var(--fireEngineRed);
+    text-align: left;
+    margin: 0;
+}
+.aboutMe h2 span{
+    color: var(--fireEngineRed);
+    text-shadow: 0 0 50px var(--fireEngineRed);
+}
+.aboutMe__container p{
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+}
+.aboutMe__btn{
+    margin-top: 1rem;
+    margin-right: 4rem;
+}
+.aboutMe__btn:last-child{
+    margin-right: 0;
+}
+.aboutMe__btn ion-icon{
+    font-size: 2.4rem;
+}
+.aboutMe__img{
+    border-radius: 50%;
+}
+.aboutMe__img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--redPantone);
+    top: 1rem;
+    cursor: pointer;
+    transition: 0.4 ease-in-out;
+}
+.aboutMe__img img:hover{
+    box-shadow: 0 0 50px var(--redPantone);
+}
+
+
+/* Experience */
+
+.experience{
+    background-color: var(--earieBlack);
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+.experience__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.experience__qrcode{
+    display: flex !important;
+    align-items: center;
+}
+.experience__qrcode p a img{
+    position: relative;
+    bottom: 0;
+    width: 32vw;
+    filter: drop-shadow(0 0 0.75rem var(--redPantone));
+    top: 1rem;
+    transition: 0.4 ease-in-out;
+}
+.experience__qrcode p a img:hover{
+    filter: drop-shadow(0 0 0.75rem var(--platinum))
+}
+.texto-oculto {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+.texto-oculto a{
+    text-decoration: none;
+    color: var(--platinum);
+    font-size: 3rem;
+}
+.experience__qrcode:hover .texto-oculto {
+    opacity: 1;
+}
+.title{
+    color: var(--platinum);
+    font-size: 6rem;
+    margin: 0;
+}
+.subtitle{
+    color: var(--fireEngineRed
+    );
+    font-size: 4rem;
+    margin: 0 0 1.5rem 0;
+}
+.experience__qrcode{
+    position: relative;
+    display: inline-block;
+}
+
+.experience__skills span img{
+    margin: 1.2rem 2rem;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 0 0.75rem var(--fireEngineRed));
+    transition: ease .3s ;
+}
+.experience__skills span img:hover {
+    filter: drop-shadow(0 0 0.75rem var(--platinum))
+}
+
+
+/* projects */
+.project{
+    position: relative;
+}
+.project .container h2{
+    margin-bottom: 40px;
+}
+.projects__grid{
+    display: grid;
+    height: 500px;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 25px;
+}
+.projects__items{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.projects__items:nth-of-type(1){
+    grid-area: img1;
+}
+.projects__items:nth-of-type(2){
+    grid-area: img2;
+}
+.projects__items:nth-of-type(3){
+    grid-area: img3;
+}
+.projects__items:nth-of-type(4){
+    grid-area: img4;
+}
+.projects__items:nth-of-type(5){
+    grid-area: img5;
+}
+.projects__hover{
+    position: absolute;
+    background: rgba(217, 4, 41, 0.40);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--platinum);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+.projects__items:hover .projects__hover{
+    transform: translateX(0%);
+}
+.projects__title{
+    font-size: 4rem;
+    margin: 0 !important; 
+}
+.projects__icon{
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+/* footer */
+.footer{
+    height: 100%;
+    background-color: var(--platinum);
+}
+.footer__container{
+    position: relative;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__logo img{
+    object-fit: cover;
+    height: 9rem;
+    transition: 0.3s ease-in-out;
+}
+.hr{
+    margin: 2.4rem 0;
+    width: 50%;
+    height: 0;
+    border: 1px solid var(--night);
+}
+.footer__nav{
+    margin-top: 2.4rem;
+}
+.footer__nav a{
+    color: var(--night);
+}
+.footer__nav a:last-child{
+    color: var(--platinum);
+}
+.portfolio__wave--bot{
+    position: relative;
+}
+.footer__social-logos a{
+    color: var(--night);
+    height: 100%;
+    font-size: 2.4rem;
+}
+.footer__social-logos ion-icon{
+    border: 0.2rem solid var(--night);
+    border-radius: 50%;
+    margin: 0 .5rem;
+    padding: 0.5rem;
+    transition: .3s ease-in-out;
+}
+.footer__social-logos ion-icon:hover{
+    color: var(--fireEngineRed);
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--fireEngineRed);
+    border: 0.2rem solid var(--fireEngineRed);
+}
+.footer__container p{
+    color: var(--night);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
