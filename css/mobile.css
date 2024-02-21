@@ -60,7 +60,7 @@
         font-size: 13rem;
     }
     .portfolio__wave--top{
-        bottom: -60px;
+        bottom: calc(-1 * var(--altura-svg));
     }
     
     /* About me */
