@@ -59,6 +59,10 @@
     .portfolio__titleContainer h3{
         font-size: 13rem;
     }
+    .portfolio__wave--top{
+        bottom: calc(-1 * var(--altura-nav-navegador));
+    }
+
     /* About me */
     .aboutMe{
         flex-direction: column-reverse;

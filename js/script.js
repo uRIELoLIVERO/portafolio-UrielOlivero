@@ -1,13 +1,13 @@
 //scroll bar menu
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
     sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 150;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
         if(top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
@@ -19,8 +19,8 @@ window.onscroll = () => {
 
 // change display navbar mobile
 
-let iconHeader = document.querySelector('.header__icon');
-let containerNav = document.querySelector('.nav__container__buttons');
+const iconHeader = document.querySelector('.header__icon');
+const containerNav = document.querySelector('.nav__container__buttons');
 
 iconHeader.addEventListener('click', toggleNavbar)
 
@@ -29,12 +29,10 @@ function toggleNavbar() {
 }
 
 // get height svg
-let heroWave = document.querySelector('.portfolio__wave--top');
+const pantallaDispositivo = window.screen.height
 
-let heroWaveWidth = heroWave.getBoundingClientRect().width;
+const alturaVentanaNavegador = window.innerHeight;
 
-let aspectRatio = 1440/200
+const alturaBarraNavegacion = pantallaDispositivo - alturaVentanaNavegador;
 
-var heroWaveHeight = heroWaveWidth / aspectRatio
-
-document.documentElement.style.setProperty('--altura-svg', svgAltura + 'px')
+document.documentElement.style.setProperty('--altura-nav-navegador', navAltura + 'px')
