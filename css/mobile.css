@@ -6,6 +6,7 @@
     section{
         padding: 10rem 4% 2rem;
     }
+    
     /* Nav */
     .header{
         padding: 1rem 4%;
@@ -58,6 +59,10 @@
     .portfolio__titleContainer h3{
         font-size: 13rem;
     }
+    .portfolio__wave--top{
+        bottom: -40px;
+    }
+    
     /* About me */
     .aboutMe{
         flex-direction: column-reverse;
@@ -78,7 +83,6 @@
     .aboutMe__img img{
         width: 50vw;
     }
-
 
     /* Experience */
     .experience{
@@ -133,6 +137,7 @@
     .projects__items:nth-of-type(5){
         grid-area: img5;
     }
+    
     /* footer */
     .footer__container{
         top: -10px;
