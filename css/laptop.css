@@ -158,8 +158,7 @@ svg{
     bottom: 0;
 }
 .portfolio__wave--top{
-    position: absolute;
-    top: var(--altura-svg);
+    display: block;
 }
 
 /* About me */
