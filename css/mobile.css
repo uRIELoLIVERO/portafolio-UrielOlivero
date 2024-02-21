@@ -58,6 +58,7 @@
     .portfolio__titleContainer h3{
         font-size: 13rem;
     }
+
     /* About me */
     .aboutMe{
         flex-direction: column-reverse;
@@ -78,7 +79,6 @@
     .aboutMe__img img{
         width: 50vw;
     }
-
 
     /* Experience */
     .experience{

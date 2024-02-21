@@ -27,6 +27,7 @@ section{
 .active{
     display: inline-block;
 }
+
 /* Nav */
 .header{
     position: fixed;
@@ -90,6 +91,7 @@ nav a.active {
     box-shadow: 0 0 25px var(--fireEngineRed);
     color: var(--whitee);
 }
+
 /* Portfolio */
 .portfolio{
     padding: 0 !important;
@@ -157,11 +159,10 @@ svg{
 }
 .portfolio__wave--top{
     position: absolute;
-    bottom: 0;
+    bottom: 0 !important;
 }
 
 /* About me */
-
 .aboutMe{
     display: flex;
     justify-content: center;
@@ -220,7 +221,6 @@ svg{
 
 
 /* Experience */
-
 .experience{
     background-color: var(--earieBlack);
     display: flex;
