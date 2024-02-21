@@ -6,6 +6,7 @@
     section{
         padding: 10rem 4% 2rem;
     }
+    
     /* Nav */
     .header{
         padding: 1rem 4%;
@@ -58,7 +59,14 @@
     .portfolio__titleContainer h3{
         font-size: 13rem;
     }
+<<<<<<< HEAD
 
+=======
+    .portfolio__wave--top{
+        bottom: calc(-1 * var(--altura-svg));
+    }
+    
+>>>>>>> 539173557ad9d222da8cf750a0fb004fb515e52f
     /* About me */
     .aboutMe{
         flex-direction: column-reverse;
@@ -133,6 +141,7 @@
     .projects__items:nth-of-type(5){
         grid-area: img5;
     }
+    
     /* footer */
     .footer__container{
         top: -10px;

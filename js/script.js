@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //scroll bar 
+=======
+//scroll bar menu
+>>>>>>> 539173557ad9d222da8cf750a0fb004fb515e52f
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -26,4 +30,19 @@ iconHeader.addEventListener('click', toggleNavbar)
 
 function toggleNavbar() {
     containerNav.classList.toggle('active')
+<<<<<<< HEAD
 }
+=======
+}
+
+// get height svg
+let heroWave = document.querySelector('.portfolio__wave--top');
+
+let heroWaveWidth = heroWave.getBoundingClientRect().width;
+
+let aspectRatio = 1440/200
+
+var heroWaveHeight = heroWaveWidth / aspectRatio
+
+document.documentElement.style.setProperty('--altura-svg', svgAltura + 'px')
+>>>>>>> 539173557ad9d222da8cf750a0fb004fb515e52f
