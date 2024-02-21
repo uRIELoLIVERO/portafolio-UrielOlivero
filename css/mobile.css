@@ -14,6 +14,7 @@
     }
     .header__icon{
         display: block;
+        cursor: pointer;
     }
     .nav__container__buttons{
         display: none;
